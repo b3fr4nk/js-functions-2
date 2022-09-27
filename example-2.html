@@ -24,7 +24,7 @@
 
     // Define some functions to do some work
 
-    function calculateTip(bill, tipPercent) {
+    const calculateTip = (bill, tipPercent) => {
       const tip = bill * tipPercent / 100
       return tip
     }
@@ -35,12 +35,12 @@
     // The best way to convert a string to a number is parseFloat(someValue)
     // or parseInt(someValue). 
 
-    function update(e) {
+    const update = (e) => {
       const billValue = parseFloat(billInput.value)
       const tipValue = parseFloat(tipInput.value)
       const tip = calculateTip(billValue, tipValue)
       const total = billValue + tip
-      display.innerHTML = `Tip: ${tip} Total: ${tip}`
+      display.innerHTML = `Tip: ${tip} Total: ${tip+billValue}`
     }
 
     // Add some event listeners

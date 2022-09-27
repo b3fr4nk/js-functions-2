@@ -38,7 +38,7 @@
       return `Hello ${str}`
     }
 
-    const world2 = function () {
+    const world2 = function (str) {
       return `${str} World`
     }
 
@@ -87,15 +87,15 @@
 
     // TODO: Convert the following to arrow functions
 
-    function helloWorld() {
+    const helloWorld = () => {
       console.log('Hello World')
     }
 
-    function foo(bar) {
+    const foo = (bar) => {
       console.log(`foo ${bar}`)
     }
 
-    function calculateArea(w, l) {
+    const calculateArea = (w, l) => {
       return w * l
     }
 
